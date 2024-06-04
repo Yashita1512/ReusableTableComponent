@@ -18,7 +18,7 @@ const Content: React.FC = () => {
   return (
     <div className='h-screen flex flex-col justify-center'>
       <h1 className="p-5 text-3xl text-center">Data Table Samples</h1>  
-      {location.pathname === "/" && <p className="text-xl text-center">Click on one of the examples to see the corressponding tables</p>} 
+      {location.pathname === "/ReusableTableComponent" && <p className="text-xl text-center">Click on one of the examples to see the corressponding tables</p>} 
       <nav className="flex justify-center gap-4 pt-8">
         <Link to="/ReusableTableComponent">Home |</Link>
         <Link to="/ReusableTableComponent/example1">Example 1 |</Link>
