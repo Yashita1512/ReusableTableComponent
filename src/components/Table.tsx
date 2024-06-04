@@ -3,6 +3,7 @@ import { TableAndPageProps} from "../types"
 export const Table: React.FC<TableAndPageProps> = ({heading_arr, data_arr, pageNumberVar, sortingFn}) => {
     return (          
     <div className="flex justify-center">
+        {/* Rendering the data by mapping through arrays and the objects within those arrays for each page */}
         <table>
             <thead>
                 {(heading_arr && heading_arr.length!==0 && sortingFn)?
@@ -26,6 +27,7 @@ export const Table: React.FC<TableAndPageProps> = ({heading_arr, data_arr, pageN
                 {(data_arr && data_arr.length!==0 && pageNumberVar)? data_arr.slice(pageNumberVar*10 - 10,pageNumberVar*10).map((data_object, index) => (
                     <tr 
                         key={`${data_object.id}_${index}`} 
+                        //Styling the table rows conditionally
                         className={`${index % 2 !==0 && 'bg-slate-300'}`}
                     >{Object.values(data_object).slice(1).map((data_entry, index) =>{
                         return <td 

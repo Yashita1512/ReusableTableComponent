@@ -1,3 +1,4 @@
+
 export const TableHeading = ({heading} : {heading: string}): JSX.Element => {
     return (
         <>
