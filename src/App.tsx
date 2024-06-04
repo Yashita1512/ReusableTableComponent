@@ -13,7 +13,6 @@ const App: React.FC = () => {
 };
 
 const Content: React.FC = () => {
-  const location= useLocation();
 
   return (
     <div className='h-screen flex flex-col justify-center'>
