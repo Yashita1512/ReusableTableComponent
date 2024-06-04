@@ -1,5 +1,4 @@
 import { Page } from "./components/Page";
-import { useLocation } from "react-router-dom";
 import {Route, BrowserRouter, Routes} from "react-router-dom";
 import { NPATG_headings, NPATG_data, Customer_headings, Customer_data, Product_headings, Product_data  } from "./assets/data";
 import { Link } from "react-router-dom";
